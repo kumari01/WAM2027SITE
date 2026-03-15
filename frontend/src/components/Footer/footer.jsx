@@ -1,7 +1,8 @@
 import React from "react";
 import "../../App.css";
 import "./Footer.css";
-function footer(){
+
+function Footer() {
     return (
         <footer className="footer" id="contact">
             <div className="footer-grid">
@@ -9,7 +10,7 @@ function footer(){
                 {/* Col 1 — Brand */}
                 <div className="footer-brand">
                     <h2 className="footer-title">WAMS 2027</h2>
-                    <p className="footer-dates">June 10th &mdash; 13th, 2027</p>
+                    <p className="footer-dates">June 16th - 19th, 2027</p>
                     <p className="footer-venue">Sasi Institute of Technology and Engineering,</p>
                     <p className="footer-venue">Tadepalligudem, Andhra Pradesh, India</p>
                     <div className="footer-logos">
@@ -76,4 +77,5 @@ function footer(){
         </footer>
     )
 }
-export default footer;
+
+export default Footer;

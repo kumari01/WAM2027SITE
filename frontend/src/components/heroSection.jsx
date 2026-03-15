@@ -3,7 +3,6 @@ import "../App.css";
 import CarouselBackground from "./CarouselBackground";
 const heroCarouselImages = [
   "SASI1.jpeg",
-  "NASAB2.png",
   "SASI2.jpeg"
 ];
 

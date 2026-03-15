@@ -515,7 +515,20 @@
     grid-template-columns: 1fr;
     flex-direction: column;
   }
-  .navbar {
+
+  #tracks.section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tracks-grid {
+    gap: 1rem;
+  }
+
+  .track-card {
+    padding: 1.25rem;
+  }
+  /* .navbar {
     position: sticky;
     top: 0;
   }
@@ -547,7 +560,7 @@
   .mobile-nav-panel.is-open {
     max-height: calc(100vh - 4.75rem);
     overflow-y: auto;
-  }
+  } */
 
   .about-layout > :last-child {
     flex: 1 1 auto;

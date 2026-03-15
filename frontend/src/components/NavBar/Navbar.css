@@ -304,3 +304,45 @@
 .mobile-submenu .mobile-nav-item {
   border-top: 1px solid #f0ebeb;
 }
+
+@media (max-width: 900px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar-row-1 {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: none;
+  }
+
+  .navbar .logo {
+    margin-right: 0;
+    font-size: 1.15rem;
+  }
+
+  .navbar-menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links,
+  .navbar-row-2 {
+    display: none;
+  }
+
+  .mobile-nav-panel {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #ece7e7;
+    transition: max-height 0.32s ease;
+  }
+
+  .mobile-nav-panel.is-open {
+    max-height: calc(100vh - 4.75rem);
+    overflow-y: auto;
+  }
+}
