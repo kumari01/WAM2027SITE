@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../App.css";
 import "./Navbar.css";
 import "../../index.css";
+
+const isInternalRoute = (href = "") => href.startsWith("/") && !href.startsWith("/#");
 
 const primaryNavItems = [
     { label: "Home", href: "/", matchPath: "/" },
@@ -81,6 +83,14 @@ function DesktopNavItem({ item, currentPath, isSubmenu = false }) {
     const isActive = !isSubmenu && item.matchPath ? item.matchPath === currentPath : false;
 
     if (!item.children) {
+        if (!item.external && isInternalRoute(item.href)) {
+            return (
+                <li>
+                    <Link to={item.href} className={isActive ? "active" : ""}>{item.label}</Link>
+                </li>
+            );
+        }
+
         return (
             <li>
                 <a href={item.href} className={isActive ? "active" : ""} {...linkProps}>{item.label}</a>
@@ -112,6 +122,21 @@ function MobileNavItem({ item, itemKey, level, currentPath, openSections, onTogg
     const toggleCurrentSection = () => onToggleSection(itemKey);
 
     if (!hasChildren) {
+        if (!item.external && isInternalRoute(item.href)) {
+            return (
+                <li className="mobile-nav-item">
+                    <Link
+                        to={item.href}
+                        className={`mobile-nav-link-single${isActive ? " active" : ""}`}
+                        onClick={onNavigate}
+                        style={{ paddingLeft }}
+                    >
+                        {item.label}
+                    </Link>
+                </li>
+            );
+        }
+
         return (
             <li className="mobile-nav-item">
                 <a
@@ -204,7 +229,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-row-1">
-                <a href="/" className="logo">WAMS 2027</a>
+                <Link to="/" className="logo">WAMS 2027</Link>
                 <button
                     type="button"
                     className="navbar-menu-toggle"
