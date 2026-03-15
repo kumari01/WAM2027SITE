@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import "./App.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/NavBar/navbar";
 import HeroSection from "./components/heroSection";
 import AboutWAms from "./components/aboutWAms";
 import AboutSasi from "./components/aboutSasi";
 import AboutLocation from "./components/aboutLocation";
 import ImportantDates from "./components/importantDates";
 import ConferenceTracks from "./components/ConferenceTrack";
-import Footer from "./components/footer";
+import Footer from "./components/Footer/footer";
 
 
 
@@ -50,7 +50,7 @@ function App() {
       <section className="brochure-section">
         <h2 className="section-title" style={{ marginBottom: "2rem" }}>Conference Brochure</h2>
         <button className="btn-primary" style={{ padding: "1.2rem 3rem", fontSize: "1.1rem" }}>
-          Download WAMS 2026 Brochure
+          Download WAMS 2027 Brochure
         </button>
       </section>
 

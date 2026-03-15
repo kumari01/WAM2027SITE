@@ -7,7 +7,7 @@ function AboutSasi() {
             <div className="two-col">
                 <div>
                     <img
-                    src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&q=80&w=800"
+                    src="SASI1.jpeg"
                     alt="Sasi Institute of Technology and Engineering Campus"
                     className="site-img"
                     />

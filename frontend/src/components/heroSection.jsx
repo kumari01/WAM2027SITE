@@ -2,9 +2,9 @@ import React , {useEffect, useState}from "react";
 import "../App.css";
 import CarouselBackground from "./CarouselBackground";
 const heroCarouselImages = [
-  "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=2000",
-  "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&q=80&w=2000",
-  "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=2000",
+  "SASI1.jpeg",
+  "NASAB2.png",
+  "SASI2.jpeg"
 ];
 
 function HeroSection() {
@@ -16,7 +16,7 @@ function HeroSection() {
     });
 
   useEffect(() => {
-    const targetDate = new Date("June 10, 2026 09:00:00").getTime();
+    const targetDate = new Date("June 16, 2027 09:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -44,7 +44,7 @@ function HeroSection() {
           </div>
           <h2 className="hero-subtitle">Wireless, Antenna & Microwave Symposium</h2>
           <h1 className="hero-title">WAMS 2027</h1>
-          <p className="hero-dates">June 10 -13, 2027</p>
+          <p className="hero-dates">June 16 -19, 2027</p>
           <p className="hero-org">Organized by<br />Sasi Institute of Technology and Engineering Tadepalligudem, Andhra Pradesh, India</p>
 
           <div className="timer">

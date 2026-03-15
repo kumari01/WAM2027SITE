@@ -1,0 +1,97 @@
+.committee-hero {
+  background: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.8rem 1rem 3rem;
+}
+
+.committee-title {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.committee-breadcrumb {
+  margin-top: 0.4rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.committee-logos {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.committee-logo-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 0.85rem 1.1rem;
+  min-width: 128px;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.committee-logo-card-wide {
+  min-width: 220px;
+}
+
+.committee-logo {
+  max-width: 100%;
+  max-height: 62px;
+  object-fit: contain;
+}
+
+.committee-content-wrap {
+  background: #f3f3f3;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.committee-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  color: #101010;
+  font-size: 1.22rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.committee-group + .committee-group {
+  margin-top: 2.4rem;
+}
+
+.committee-group-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+}
+
+.committee-group p + p {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .committee-title {
+    font-size: 2.1rem;
+  }
+
+  .committee-breadcrumb {
+    font-size: 1.1rem;
+  }
+
+  .committee-content {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .committee-group-title {
+    font-size: 1.2rem;
+  }
+}
+

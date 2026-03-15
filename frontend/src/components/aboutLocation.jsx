@@ -8,12 +8,12 @@ function aboutLocation(){
             <div>
                 <h2 className="section-title">About Tadepalligudem</h2>
                 <p className="about-text">
-                Tadepalligudem is an educational and technological hub located in the West Godavari district of Andhra Pradesh, India. Known for its peaceful academic environment and growing research culture, the city provides an ideal setting for international conferences and academic collaboration.
+                    Tadepalligudem is not only known for its educational institutions but also for its rich cultural and architectural heritage. The region reflects the traditional beauty of South Indian temple architecture, featuring intricate stone carvings, historical structures, and spiritual landmarks. These monuments showcase the artistic craftsmanship and cultural legacy that have been preserved for generations, attracting visitors, researchers, and history enthusiasts alike.
                 </p>
             </div>
             <div>
                 <img
-                src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800"
+                src = "Place.webp"
                 alt="Campus"
                 className="location-img"
                 />
