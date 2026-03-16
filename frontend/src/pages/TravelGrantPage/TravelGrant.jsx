@@ -60,6 +60,11 @@ const importantDates = [
 function TravelGrantPage() {
 	return (
 		<div className="travel-grant-page">
+			<div className="top-bar">
+				<div className="top-bar-content">
+					IEEE Conference Record #XXXXX | International Symposium
+				</div>
+			</div>
 			<Navbar />
 
 			<section className="travel-hero">
