@@ -7,30 +7,23 @@
   top: 0;
   z-index: 100;
   backdrop-filter: none;
-  width: 100%;
-  max-width: 100%;
 }
 
 .navbar-row-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.7rem clamp(1rem, 2vw, 3rem);
+  padding: 0.7rem 3rem;
   border-bottom: 1px solid #eee;
   background: #FFFFFF;
-  width: 100%;
-  max-width: 100%;
 }
 
 .navbar-row-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem clamp(1rem, 2vw, 3rem);
+  padding: 0.7rem 3rem;
   background: #FFFFFF;
-  width: 100%;
-  max-width: 100%;
 }
 
 .navbar .logo {
@@ -65,20 +58,16 @@
 
 .nav-links {
   display: flex;
-  gap: clamp(0.5rem, 0.85vw, 1.1rem);
-  font-size: clamp(0.78rem, 0.82vw,1rem);
+  gap: 1.5rem;
+  font-size: 1rem;
   /* font-weight: 500; */
   flex: 1;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  min-width: 0;
-  overflow: visible;
 }
 
 .nav-links li {
   list-style: none;
   position: relative;
-  flex: 0 0 auto;
 }
 
 .nav-links li a {
@@ -196,11 +185,9 @@
 
 .nav-links-secondary {
   display: flex;
-  gap: clamp(0.9rem, 1.8vw, 2rem);
+  gap: 2rem;
   font-size: 1rem;
   /* font-weight: 500; */
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .nav-links-secondary li {
@@ -273,7 +260,7 @@
 
 .mobile-nav-link-single.active,
 .mobile-nav-item-row.active {
-  background: var(--accent);
+  background: var(--primary);
 }
 
 .mobile-nav-link-single.active,
@@ -327,7 +314,6 @@
   .navbar-row-1 {
     flex-direction: row;
     gap: 1rem;
-    align-items: center;
     padding: 1rem 1.25rem;
     border-bottom: none;
   }

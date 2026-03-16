@@ -1,6 +1,6 @@
 .footer {
   /* background: #1a0a3c; */
-  background: #591515;
+  background: var(--primary);
   color: #F5F5F5;
   padding: 2rem 2rem 2rem;
 }
@@ -30,13 +30,13 @@
 
 .footer-dates {
   font-size: 1rem;
-  color: #ccc;
+  color: #F5F5F5;
   margin-bottom: 0.1rem;
 }
 
 .footer-venue {
   font-size: 0.9rem;
-  color: #bbb;
+  color: #F5F5F5;
   line-height: 1.5;
 }
 
@@ -93,7 +93,7 @@
 
 .footer-links li a:hover {
   opacity: 1;
-  color: #faadad;
+  color: var(--white);
 }
 
 .footer-contact li {

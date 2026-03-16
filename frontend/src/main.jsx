@@ -4,6 +4,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import CommittePage from './pages/committePage/committe.jsx'
+import TravelGrantPage from './pages/TravelGrantPage/TravelGrant.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/committee" element={<CommittePage />} />
+        <Route path="/travel-grant" element={<TravelGrantPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

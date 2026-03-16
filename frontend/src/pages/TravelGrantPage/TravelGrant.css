@@ -1,0 +1,232 @@
+.travel-grant-page {
+	background: #eceff4;
+	color: var(--primary);
+	min-height: 100vh;
+}
+
+.travel-hero {
+	background:var(--primary);
+	padding: 3rem 1rem;
+	text-align: center;
+}
+
+.travel-hero h1 {
+	color: #ffffff;
+	font-size: clamp(1.8rem, 4vw, 3rem);
+	letter-spacing: 0.04em;
+	font-weight: 700;
+}
+
+.travel-main-content {
+	width: min(1200px, calc(100% - 2rem));
+	margin: 1.8rem auto 2.5rem;
+}
+
+.travel-intro {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.travel-intro h2 {
+	color: var(--primary);
+	font-size: clamp(1.8rem, 3.7vw, 3rem);
+	margin-bottom: 1.2rem;
+}
+
+.travel-intro p {
+	width: min(980px, 100%);
+	margin: 0 auto;
+	font-size: 1.15rem;
+	font-weight: 600;
+	line-height: 1.35;
+	color: #0f1720;
+}
+
+.travel-panel {
+	background: #e8ebf0;
+	border-top: 4px solid var(--primary);
+	border-bottom: 4px solid var(--primary);
+	padding: clamp(1.2rem, 2.3vw, 2.3rem);
+	margin-bottom: 1.8rem;
+}
+
+.travel-panel h3 {
+	color: var(--primary);
+	font-size: clamp(1.45rem, 2.8vw, 2.25rem);
+	margin-bottom: 1rem;
+}
+
+.travel-panel p {
+	font-size: 1.05rem;
+	color: var(--primary);
+	margin-bottom: 0.95rem;
+}
+
+.travel-panel a {
+	color: var(--primary);
+	font-weight: 600;
+}
+
+.travel-check-list,
+.travel-dot-list {
+	margin-top: 0.75rem;
+	padding-left: 0;
+}
+
+.travel-check-list li,
+.travel-dot-list li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+	font-size: 1.05rem;
+	color: var(--primary);
+	line-height: 1.45;
+}
+
+.travel-check-list li::before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 1.35rem;
+	line-height: 1;
+	color: var(--primary);
+	font-weight: 700;
+}
+
+.travel-dot-list li::before {
+	content: "•";
+	position: absolute;
+	left: 0.3rem;
+	top: -0.1rem;
+	font-size: 1.7rem;
+	color: var(--primary);
+}
+
+.travel-panel h4 {
+	color: var(--primary);
+	font-size: 1.95rem;
+	margin: 1.2rem 0 0.8rem;
+}
+
+.travel-panel-wide {
+	border-top-width: 5px;
+}
+
+.travel-grid-two-col {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.2rem;
+	margin: 1.2rem 0;
+}
+
+.travel-sub-card,
+.travel-terms-card,
+.travel-note-card {
+	background: #e3e8ee;
+	border: 1px solid #d5dbe3;
+	border-radius: 12px;
+	padding: 1.15rem;
+}
+
+.travel-sub-card h4,
+.travel-terms-card h4 {
+	margin-top: 0;
+	margin-bottom: 0.8rem;
+	color: var(--primary);
+	font-size: 2rem;
+}
+
+.travel-check-list.compact li {
+	margin-bottom: 0.7rem;
+}
+
+.travel-terms-card ol {
+	margin: 0;
+	padding-left: 1.4rem;
+}
+
+.travel-terms-card li {
+	margin-bottom: 0.55rem;
+	color: var(--primary);
+	line-height: 1.45;
+	font-size: 1.1rem;
+}
+
+.travel-contact-row {
+	margin-top: 1.5rem;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 260px;
+	gap: 1.5rem;
+	align-items: start;
+}
+
+.travel-contact h4 {
+	margin: 0 0 0.5rem;
+}
+
+.travel-contact p {
+	margin-bottom: 0.5rem;
+}
+
+.travel-contact a {
+	display: block;
+	color: var(--primary);
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-top: 0.5rem;
+}
+
+.travel-note-card {
+	text-align: center;
+	background: #dce6ef;
+}
+
+.travel-note-card h5 {
+	font-size: 1.2rem;
+	color: var(--primary);
+	margin-bottom: 0.6rem;
+}
+
+.travel-note-card p {
+	margin-bottom: 0;
+	font-size: 1.05rem;
+	color: var(--primary);
+}
+
+@media (max-width: 900px) {
+	.travel-main-content {
+		width: calc(100% - 1.1rem);
+		margin-top: 1rem;
+	}
+
+	.travel-hero {
+		padding: 2rem 0.8rem;
+	}
+
+	.travel-intro p {
+		font-size: 1rem;
+	}
+
+	.travel-grid-two-col,
+	.travel-contact-row {
+		grid-template-columns: 1fr;
+	}
+
+	.travel-panel h4,
+	.travel-sub-card h4,
+	.travel-terms-card h4 {
+		font-size: 1.45rem;
+	}
+
+	.travel-check-list li,
+	.travel-dot-list li,
+	.travel-terms-card li {
+		font-size: 1rem;
+	}
+
+	.travel-contact a {
+		font-size: 1.2rem;
+	}
+}

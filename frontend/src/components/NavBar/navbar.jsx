@@ -29,11 +29,8 @@ const primaryNavItems = [
     { label: "Awards", href: "/#awards" },
     {
         label: "Travel Grant",
-        href: "/#travel",
-        children: [
-            { label: "Venue", href: "/#venue" },
-            { label: "How To Travel", href: "/#how-to-travel" },
-        ],
+        href: "/travel-grant",
+        matchPath: "/travel-grant",
     },
     {
         label: "WIE/YP/SA",
@@ -73,9 +70,9 @@ const primaryNavItems = [
 ];
 
 const secondaryNavItems = [
-    { label: "Nearby Attractions", href: "/#attractions" },
-    { label: "Important Dates", href: "/#dates" },
-    { label: "Contact Us", href: "/#contact" },
+    { label: "Nearby Attractions", href: "/travel-grant#nearby-attractions" },
+    { label: "Important Dates", href: "/travel-grant#important-dates" },
+    { label: "Contact Us", href: "/travel-grant#contact-travel-grant" },
 ];
 
 function DesktopNavItem({ item, currentPath, isSubmenu = false }) {
