@@ -206,6 +206,12 @@
   color: var(--primary);
 }
 
+.nav-links-secondary li a.active {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 4px;
+}
+
 .mobile-nav-panel {
   display: none;
 }

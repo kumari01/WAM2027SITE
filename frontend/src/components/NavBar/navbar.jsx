@@ -20,8 +20,9 @@ const primaryNavItems = [
     { label: "Committee", href: "/committee", matchPath: "/committee" },
     {
         label: "Authors", href: "/#authors",
+        matchPath: "/call-for-paper",
         children: [
-            { label: "Call For Papers", href: "/#call-for-papers" },
+            { label: "Call For Papers", href: "/call-for-paper" },
             { label: "Paper Submission", href: "/#paper-submission" },
             { label: "CRC & Copyright Submission", href: "/#crc-submission" },
         ],
@@ -51,9 +52,10 @@ const primaryNavItems = [
     { label: "Accommodation", href: "/#accommodation" },
     {
         label: "Special Sessions",
-        href: "/#sessions",
+        href: "/call-for-special-sessions",
+        matchPath: "/call-for-special-sessions",
         children: [
-            { label: "Session Proposals", href: "/#session-proposals" },
+            { label: "Call For Special Sessions", href: "/call-for-special-sessions" },
             { label: "Accepted Sessions", href: "/#accepted-sessions" },
         ],
     },
@@ -61,18 +63,19 @@ const primaryNavItems = [
     { label: "Registration", href: "/#registration" },
     {
         label: "Sponsors",
-        href: "/#sponsors",
+        href: "/sponsors",
+        matchPath: "/sponsors",
         children: [
-            { label: "Sponsorship Brochure", href: "/#sponsorship-brochure" },
-            { label: "Become a Sponsor", href: "/#become-a-sponsor" },
+            { label: "Sponsorship Brochure", href: "/sponsors#sponsorship-brochure" },
+            { label: "Become a Sponsor", href: "/sponsors#become-a-sponsor" },
         ],
     },
 ];
 
 const secondaryNavItems = [
-    { label: "Nearby Attractions", href: "/travel-grant#nearby-attractions" },
-    { label: "Important Dates", href: "/travel-grant#important-dates" },
-    { label: "Contact Us", href: "/travel-grant#contact-travel-grant" },
+    { label: "Nearby Attractions", href: "/travel-grant#nearby-attractions", matchPath: "/travel-grant" },
+    { label: "Important Dates", href: "/travel-grant#important-dates", matchPath: "/travel-grant" },
+    { label: "Contact Us", href: "/contact-us", matchPath: "/contact-us" },
 ];
 
 function DesktopNavItem({ item, currentPath, isSubmenu = false }) {
@@ -247,7 +250,17 @@ function Navbar() {
             <div className="navbar-row-2">
                 <ul className="nav-links-secondary">
                     {secondaryNavItems.map((item) => (
-                        <li key={item.label}><a href={item.href}>{item.label}</a></li>
+                        <li key={item.label}>
+                            {isInternalRoute(item.href) ? (
+                                <Link to={item.href} className={item.matchPath === location.pathname ? "active" : ""}>
+                                    {item.label}
+                                </Link>
+                            ) : (
+                                <a href={item.href} className={item.matchPath === location.pathname ? "active" : ""}>
+                                    {item.label}
+                                </a>
+                            )}
+                        </li>
                     ))}
                 </ul>
             </div>

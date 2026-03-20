@@ -1,0 +1,123 @@
+.contact-page {
+	min-height: 100vh;
+	background: #f0f2f6;
+}
+
+.contact-hero {
+	position: relative;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-image: url("/Place.webp");
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+.contact-hero-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(9, 24, 52, 0.66), rgba(11, 61, 145, 0.72));
+}
+
+.contact-hero-content {
+	position: relative;
+	z-index: 1;
+	color: #ffffff;
+	padding: 1rem;
+}
+
+.contact-hero-content h1 {
+	font-size: clamp(2.1rem, 4vw, 3.3rem);
+	font-weight: 700;
+	letter-spacing: 0.03em;
+}
+
+.contact-breadcrumb {
+	margin-top: 0.8rem;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.7rem;
+	font-size: 1.15rem;
+	font-weight: 500;
+}
+
+.contact-breadcrumb a {
+	color: #ffffff;
+}
+
+.contact-main {
+	padding-top: clamp(3rem, 6vw, 5rem);
+	padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.contact-card {
+	max-width: 980px;
+	margin: 0 auto;
+	color: var(--text);
+	font-size: 1.18rem;
+	line-height: 1.7;
+}
+
+.contact-card h2 {
+	margin-bottom: 0.8rem;
+	font-size: clamp(1.8rem, 3vw, 2.4rem);
+	color: #000000;
+}
+
+.contact-card h2:not(:first-child) {
+	margin-top: 2rem;
+}
+
+.contact-line {
+	display: flex;
+	gap: 0.65rem;
+	align-items: baseline;
+	flex-wrap: wrap;
+}
+
+.contact-line span {
+	color: #111111;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.contact-line a {
+	color: var(--secondary);
+	font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+	font-weight: 700;
+}
+
+.contact-venue {
+	color: var(--secondary);
+	font-weight: 700;
+	font-size: clamp(1.35rem, 2.5vw, 1.95rem);
+	line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+	.contact-main {
+		padding-left: 1.1rem;
+		padding-right: 1.1rem;
+	}
+
+	.contact-hero {
+		min-height: 250px;
+	}
+
+	.contact-breadcrumb {
+		font-size: 1rem;
+	}
+
+	.contact-card {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+
+	.contact-line a,
+	.contact-venue {
+		font-size: 1.22rem;
+	}
+}
