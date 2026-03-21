@@ -9,6 +9,7 @@ import ContactUsPage from './pages/ContactUs/contactus.jsx'
 import SponsorsPage from './pages/SponsorsPage/SponsorsPage.jsx'
 import CallForPaperPage from './pages/CallForPaper/CallForPaper.jsx'
 import CallForSPLsessionPage from './pages/CallForSPLsession/CallForSPLsession.jsx'
+import PaperSubmissionPage from './pages/PaperSub/PaperSubmission'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/sponsors" element={<SponsorsPage />} />
         <Route path="/call-for-paper" element={<CallForPaperPage />} />
+        <Route path="/paper-submission" element={<PaperSubmissionPage />} />
         <Route path="/call-for-special-sessions" element={<CallForSPLsessionPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

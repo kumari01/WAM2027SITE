@@ -23,7 +23,7 @@ const primaryNavItems = [
         matchPath: "/call-for-paper",
         children: [
             { label: "Call For Papers", href: "/call-for-paper" },
-            { label: "Paper Submission", href: "/#paper-submission" },
+            { label: "Paper Submission", href: "/paper-submission" },
             { label: "CRC & Copyright Submission", href: "/#crc-submission" },
         ],
     },
